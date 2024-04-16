@@ -22,4 +22,8 @@ fn main() {
     //constants
     const MAX_POINTS: u32 = 100_000;
     println!("Hello, world! {MAX_POINTS}");
+
+    //annotations
+    let guess: u32 = "42".parse().expect("Not a number!");
+    println!("Hello, world! {guess}");
 }
