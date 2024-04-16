@@ -119,7 +119,7 @@ fn main() {
     //read line
     io::stdin().read_line(&mut index).expect("Failed to read line");
     //check type
-    let index: usize = index.trim().parse().expect("Index entered was not a number");
+    let index: usize = index.trim().parse().expect("Index entered was not a number"); //by using usize type, length is limit to architecture
     //print value
     let element = a[index];
     println!("The value of the element at index {index} is: {element}");
